@@ -1,0 +1,16 @@
+pre-commit:
+  parallel: true
+  commands:
+    echo-commit:
+      run: echo "pre-commit running"
+      skip:
+        - merge
+        - rebase
+pre-push:
+  parallel: true
+  commands:
+    echo-commit:
+      run: echo "pre-push running"
+      skip:
+        - merge
+        - rebase
