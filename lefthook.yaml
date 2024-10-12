@@ -9,7 +9,7 @@ pre-commit:
 pre-push:
   parallel: true
   commands:
-    echo-commit:
+    echo-push:
       run: echo "pre-push running"
       skip:
         - merge
